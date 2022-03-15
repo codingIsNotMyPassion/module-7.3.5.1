@@ -71,7 +71,7 @@ export function LoginPage() {
       <button onClick={() => history.push("/signup")}>Signup</button>
       <br />
       <a
-        href="http://localhost:3000/forget-password"
+        href="https://minily.netlify.app/forget-password"
         target="_blank"
         rel="noreferrer"
       >
