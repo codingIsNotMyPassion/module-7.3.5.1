@@ -2,37 +2,304 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lan-main,
+.dash-main {
+  background-color: whitesmoke;
+  height: max-content;
+  padding: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lan-nav {
   display: flex;
-  flex-direction: column;
+  padding: 0px 10px 0px 10px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: fantasy;
+  color: rgb(31, 29, 29);
+  font-weight: bolder;
+}
+.lan-btn {
+  margin: 0.2rem;
+  padding: 10px;
+  width: 80px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border: none;
+  background-color: whitesmoke;
+  color: rgb(94, 88, 88);
+  cursor: pointer;
+}
+
+.lan-btn:hover {
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.lan-content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.content-left {
+  width: 500px;
+}
+.lan-content h1 {
+  font-size: 60px;
+}
+.lan-content p {
+  font-size: 20px;
+  font-style: oblique;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.image {
+  width: 500px;
+  object-fit: cover;
+}
+
+.demo-div {
+  border: none;
+  background-color: white;
+  border-radius: 15px;
+  width: 720px;
+  height: max-content;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(1 1fr);
+  gap: 0.5rem;
+}
+.input-box {
+  width: 670px;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 255, 234);
+}
+
+.demo-btn {
+  width: 120px;
+  background-color: rgb(0, 255, 234);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: black;
+  opacity: 0.4;
+  padding: 15px;
+}
+.demo-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+p {
+  font-style: oblique;
+  font-size: large;
+  opacity: 0.7;
+}
+.feature-content {
+  background-color: white;
+  padding: 40px 10px 40px 10px;
+  width: 300px;
+  border-radius: 5px;
+}
+.feature-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.acces-portal {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/619/550/467/dark-blue-wallpaper-thumb.jpg");
+  object-fit: cover;
+  height: 150px;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.account-btn {
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: large;
+  font-weight: bold;
+  background-color: white;
+  opacity: 0.5;
+}
+.account-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.footer {
+  background-color: #232127;
+  padding: 10px;
+  color: aliceblue;
+}
+.footer:hover {
+  color: rgb(0, 255, 234);
+  cursor: pointer;
+}
+
+.signup-form {
+  width: 600px;
+  height: max-content;
+  margin: 70px auto;
+  padding: 27px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.signup-form input {
+  width: 500px;
+  margin: 0.5rem;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup-form button {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.signup-form button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.dash-content {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.dash-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.dash-button {
+  margin-left: auto;
+}
+.dash-button button {
+  margin: 0.2rem;
+  padding: 10px;
+  width: 80px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border: none;
+  background-color: whitesmoke;
+  color: rgb(94, 88, 88);
+  cursor: pointer;
+  font-size: 15px;
+}
+.dash-button button:hover {
+  background-color: white;
+  color: black;
+}
+
+.data {
+  border: 2px solid rgb(0, 255, 234);
+  padding: 5px;
+  width: 700px;
+  margin: 0 auto;
+  height: max-content;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.longurl {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.table-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2%;
+}
+
+.dashboard {
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+.dash-form {
+  padding: 10px;
+}
+
+@media screen and (max-width: 970px) {
+  .feature-page {
+    grid-template-columns: repeat(1, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+  .demo-div {
+    width: 590px;
+  }
+
+  .input-box {
+    width: 545px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .demo-div {
+    width: 290px;
+  }
+
+  .input-box {
+    width: 250px;
+  }
+  .image {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .demo-div {
+    width: 230px;
+  }
+
+  .input-box {
+    width: 185px;
+  }
+  .image {
+    width: 300px;
+  }
+  .feature-content {
+    width: 250px;
+  }
+  .signup-form {
+    width: 270px;
+    padding: 10px;
+  }
+  .signup-form input {
+    width: 200px;
+  }
+  .data {
+    width: 250px;
+  }
+  .data a {
+    font-size: small;
   }
 }
